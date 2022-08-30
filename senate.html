@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="senate.js"></script>
+    <title>SENATE</title>
+</head>
+    
+<body>
+  <div>
+    <div class="container-fluid bg-primary py-2">
+      <div class="container">
+        <img src="/recursos/img_tgif.png" alt="img_tgif_1">
+      </div>
+    </div> 
+    <div class="py-3" style="background-color: #F56260 ;" >
+      <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment" class="btn btn-primary ml-4">Transparency and Open Government</a>
+    </div>
+  </div>
+  
+  <nav>
+    <div class="container p-2">
+      <div class="row justify-content-center">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-primary" onclick="document.location='index.html'">HOME</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              CONGRESS 133
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="senate.html">SENATE</a>
+              <a class="dropdown-item" href="house.html">HOUSE</a>
+              <a class="dropdown-item" href="statistics.html">STATISTICS</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav> 
+          
+  <div  class="row mt-5">
+    <div class="container py-5 col-4 card bg-light h-75">
+      <div class="col-sm-12 col-md-6 col-lg-12">
+        <h2 >SENATE</h2>
+        <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. 
+          Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has 
+          several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification 
+          and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, 
+          military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal 
+          officials impeached by the House. </p>
+      </div>
+    </div>
+
+    <div class="container py-5 col-6 card bg-light">
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-6 col-lg-12">
+          <table class="table container">
+            <thead class="table-light">
+              <tr>
+                <th scoope="col">NAME</th>
+                <th scoope="col">PARTY</th>
+                <th scoope="col">STATE</th>
+                <th scoope="col">SENIORITY</th>
+                <th scoope="col">% OF VOTES</th>
+              </tr>
+            </thead>
+                
+            <tbody id="senateId">
+                  <!--house.js-->           
+            </tbody>
+          
+          </table>
+        </div> 
+      </div>
+    </div>
+  </div>      
+  
+<footer>
+  <div class="py-3 text-center" style="background-color: #F56260 ;"> ©  2022 TGIF    ||    All right reserved.</div>
+</footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>

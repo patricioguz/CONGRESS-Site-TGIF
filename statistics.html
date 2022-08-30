@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="/style.css">
+    <script src="house.js"></script>
+    <script src="senate.js"></script>
+    <title>Statistics</title>
+</head>
+    
+<body>
+  <div>
+    <div class="container-fluid bg-primary py-2">
+      <div class="container">
+        <img src="/recursos/img_tgif.png" alt="img_tgif_1">
+      </div>
+    </div> 
+    <div class="py-3" style="background-color: #F56260 ;" >
+      <a href="https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment" class="btn btn-primary ml-4">Transparency and Open Government</a>
+    </div>
+  </div>
+   
+  <nav>
+    <div class="container p-2">
+      <div class="row justify-content-center">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-primary" onclick="document.location='index.html'">HOME</button>
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              CONGRESS 133
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="senate.html">SENATE</a>
+              <a class="dropdown-item" href="house.html">HOUSE</a>
+              <a class="dropdown-item" href="statistics.html">STATISTICS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>        
+ 
+  <div  class="row mt-5">
+    <div class="container py-5 col-4 card bg-light">
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-6 col-lg-12">
+          <h2> HOUSE MEMBERS : <span style="font-size: 50px;" id="membersHouseId"></span></h2>
+          <table class="table container" style="text-align: center;">
+            <thead class="table-light">
+              <tr>
+                <th scoope="col">PARTY</th>
+                <th scoope="col">PARTY MEMBERS</th>
+                <th scoope="col">AVERAGE VOTES PER PARTY</th>
+              </tr>
+            </thead>
+            <tbody id="statHouseId">
+            </tbody>
+          </table>
+        </div> 
+      </div>
+    </div>
+    
+    <div class="container py-5 col-4 card bg-light">
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-6 col-lg-12">
+          <h2>SENATE MEMBERS: <span style="font-size: 50px;" id="membersSenateId"></span></h2>
+          <table class="table container" style="text-align: center;">
+            <thead class="table-light">
+              <tr>
+                <th scoope="col">PARTY</th>
+                <th scoope="col">PARTY MEMBERS</th>
+                <th scoope="col">AVERAGE VOTES PER PARTY</th>
+              </tr>
+            </thead>           
+            <tbody id="statSenateId">
+            </tbody>
+          </table>
+        </div> 
+      </div>
+    </div>
+
+    <div class="container py-5 mt-5 mb-5 col-6 card bg-light h-75">
+      <div class="col-sm-12 col-md-6 col-lg-12">
+        <h2 >ATTENDANCE</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias error itaque at reprehenderit, 
+            architecto quasi rerum sunt in nobis? Dolorum ab nesciunt unde quaerat dicta fuga reiciendis rem, 
+            neque voluptatum? 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ea numquam, quia pariatur eveniet 
+          similique natus, neque nemo inventore laboriosam quibusdam iste facilis consequatur molestias animi 
+          odio ullam excepturi nulla.</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-12 py-5">
+        <h2 >PARTY LOYALTY</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eum corporis ea labore quasi consequatur repudiandae 
+            nostrum assumenda iusto modi provident laborum iste quo amet, corrupti harum enim expedita in. Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit. Non corporis esse, natus repellendus modi, quas amet, illo incidunt 
+            reprehenderit laboriosam odit. Ducimus labore sed voluptas necessitatibus sint dignissimos modi illum.</p>
+      </div>
+    </div> 
+  </div>      
+  
+  <footer>
+    <div class="py-3 text-center" style="background-color: #F56260 ;"> ©  2022 TGIF    ||    All right reserved.</div>
+  </footer>
+  
+</body>
+</html>
+
